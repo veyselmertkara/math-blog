@@ -1,0 +1,49 @@
+{{- define "main" }}
+{{- if site.Params.homeInfoParams.Title }}
+<header class="page-header">
+    <h1>{{ site.Params.homeInfoParams.Title }}</h1>
+    {{- if site.Params.homeInfoParams.Content }}
+    <div class="post-description">
+        {{ site.Params.homeInfoParams.Content }}
+    </div>
+    {{- end }}
+</header>
+{{- end }}
+
+<div class="home-content-wrapper">
+    <div class="categories-section">
+        <ul class="terms-tags">
+            {{- range $key, $value := site.Taxonomies.categories.Alphabetical }}
+            {{- $name := .Name }}
+            {{- if ne $name "archive" }}
+            {{- with site.GetPage (printf "/categories/%s" $name) }}
+            <li>
+                <a href="{{ .Permalink }}">{{ .Title }} <sup><strong><sup>{{ $value.Count }}</sup></strong></sup></a>
+            </li>
+            {{- end }}
+            {{- end }}
+            {{- end }}
+        </ul>
+    </div>
+
+    <aside class="contact-sidebar">
+        <h2>İletişim</h2>
+        <div class="contact-content">
+            <p>Sorularınız, önerileriniz veya hata bildirimleriniz için iletişime geçebilirsiniz.</p>
+            <div class="contact-links">
+                <a href="mailto:ozsoy.kaan@metu.edu.tr" class="contact-item">
+                    <span class="contact-icon">✉️</span> ozsoy.kaan@metu.edu.tr
+                </a>
+                <a href="https://www.instagram.com/kaan.ozsy/" target="_blank" rel="noopener noreferrer"
+                    class="contact-item">
+                    <span class="contact-icon">📸</span> Instagram
+                </a>
+                <a href="https://github.com/veyselmertkara" target="_blank" rel="noopener noreferrer"
+                    class="contact-item">
+                    <span class="contact-icon">🐙</span> GitHub
+                </a>
+            </div>
+        </div>
+    </aside>
+</div>
+{{- end }}

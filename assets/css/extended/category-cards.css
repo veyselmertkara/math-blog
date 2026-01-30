@@ -1,0 +1,56 @@
+/* Category Cards - Modern Simple Design */
+.category-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+    max-width: 800px;
+    /* Optimize width for readability */
+    margin: 0 auto;
+    /* Center the column */
+}
+
+.category-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: var(--entry);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1.5rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+}
+
+.category-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    border-color: var(--accent);
+}
+
+.category-card-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--primary);
+    margin: 0;
+    line-height: 1.3;
+    text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .category-cards {
+        width: 100%;
+    }
+
+    .category-card {
+        padding: 1.25rem;
+    }
+
+    .category-card-title {
+        font-size: 1.15rem;
+    }
+}

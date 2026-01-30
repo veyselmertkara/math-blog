@@ -1,0 +1,68 @@
+baseURL: "https://senin-kullanici-adin.github.io/"
+languageCode: "tr-tr"
+title: "CrichMath" # Tarayıcı sekmesinde görünecek isim
+theme: "PaperMod"
+
+enableEmoji: true
+
+params:
+  # --- GENEL GÖRÜNÜM (Wiki Tarzı) ---
+  env: production
+  description: "Açık kaynaklı matematik notları ve ispat kütüphanesi."
+  author: "Selim Kaan Ozsoy" # Bu isim SADECE yazıların içinde, başlığın altında minik yazar olarak görünür.
+  defaultTheme: "auto"
+  
+  # --- ANA SAYFA DÜZENİ (HomeInfoMode) ---
+  # ProfileMode'u kapattık. Onun yerine sade bir başlık.
+  profileMode:
+    enabled: false
+  
+  homeInfoParams:
+    Title: "CrichMath" # Listenin tepesindeki büyük başlık
+    Content: "Lisans seviyesinde teorem ispatları, ders notları ve analizler." # Altındaki gri açıklama
+
+  # --- SOSYAL İKONLAR (Sadece GitHub yeterli olur bu konseptte) ---
+  socialIcons: []
+  # --- YAZI DETAYLARI ---
+  # --- YAZI DETAYLARI ---
+  ShowReadingTime: false    # Okuma süresi kalsın mı? (İstersen bunu da false yapabilirsin)
+  ShowShareButtons: false  # <-- DEĞİŞTİ: Paylaş butonları KAPANDI
+  ShowPostNavLinks: false  # <-- DEĞİŞTİ: "Next/Previous" (İleri/Geri) linkleri KAPANDI
+  ShowBreadCrumbs: true    # Üstteki "Home > Posts > ..." yolu (Bunu tutmak iyidir)
+  ShowCodeCopyButtons: true
+  
+  # Yazar bilgisini ana sayfadaki listede gizle, sadece yazı içinde göster
+  hideMeta: false 
+  
+  # --- MATEMATİK MOTORU ---
+  math: true 
+
+# --- MENÜ YAPISI (Dersler Burada Tanımlanır) ---
+menu:
+  main:
+    - identifier: calculus-i
+      name: Advanced Calculus
+      url: /categories/calculus-i/
+      weight: 10
+    - identifier: calculus-ii
+      name: Multivariable Calculus
+      url: /categories/calculus-ii/
+      weight: 20
+    - identifier: elementary-number-theory
+      name: Elementary Number Theory
+      url: /categories/elementary-number-theory/ 
+      weight: 30
+    - identifier: diff-eq        # YENİ DERS EKLENDİ
+      name: Differential Equations
+      url: /categories/differential-equations/
+      weight: 40
+
+    - identifier: foundations
+      name: Foundations of Mathematical Reasoning
+      url: /categories/foundations-of-mathematical-reasoning/
+      weight: 60
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true

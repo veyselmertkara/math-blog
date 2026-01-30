@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Differential Equations | CrichMath</title>
+<meta name="keywords" content="">
+<meta name="description" content="Açık kaynaklı matematik notları ve ispat kütüphanesi.">
+<meta name="author" content="Selim Kaan Ozsoy">
+<link rel="canonical" href="http://localhost:1313/categories/differential-equations/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.adc991d140e969f97ae8781d22a2ce2da777ed8ad7dd3c4ae08bba892fa8c8a3.css" integrity="sha256-rcmR0UDpafl66HgdIqLOLad37YrX3TxK4Iu6iS&#43;oyKM=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/categories/differential-equations/index.xml" title="rss">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/categories/differential-equations/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+    onload="renderMathInElement(document.body, {
+        delimiters: [
+            {left: '$$', right: '$$', display: true},
+            {left: '$', right: '$', display: false},
+            {left: '\\(', right: '\\)', display: false},
+            {left: '\\[', right: '\\]', display: true}
+        ]
+    });">
+</script>
+
+<meta property="og:url" content="http://localhost:1313/categories/differential-equations/">
+  <meta property="og:site_name" content="CrichMath">
+  <meta property="og:title" content="Differential Equations">
+  <meta property="og:description" content="Açık kaynaklı matematik notları ve ispat kütüphanesi.">
+  <meta property="og:locale" content="tr-tr">
+  <meta property="og:type" content="website">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Differential Equations">
+<meta name="twitter:description" content="Açık kaynaklı matematik notları ve ispat kütüphanesi.">
+
+</head>
+<body class="list" id="top">
+    <header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="CrichMath (Alt + H)">CrichMath</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/categories/calculus-i/" title="Advanced Calculus">
+                    <span>Advanced Calculus</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/categories/calculus-ii/" title="Multivariable Calculus">
+                    <span>Multivariable Calculus</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/categories/elementary-number-theory/" title="Elementary Number Theory">
+                    <span>Elementary Number Theory</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/categories/differential-equations/" title="Differential Equations">
+                    <span class="active">Differential Equations</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/categories/foundations-of-mathematical-reasoning/" title="Foundations of Mathematical Reasoning">
+                    <span>Foundations of Mathematical Reasoning</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
+<header class="page-header"><div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/categories/">Categories</a></div>
+  <h1>
+    Differential Equations
+  </h1>
+</header>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Homogeneous Differential Equations
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p> Some first order ordinary differential equations are not separable, but we can convert them into separable equations after applying simple substitution. Such equations are called homogeneous equations. In this section, we will discuss how to apply this substitution and solve such equations.
+Definition. A first order ordinary differential equation is called homogeneous if it can be expressed in the form
+$$ \frac{dy}{dx}=f\left(\frac{y}{x}\right) $$
+for some function $f$. The given expression may seem a little devious, but an equivalent and often more practical way to verify that a function is homogeneous is through its scaling behavior.
+Let
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-01-26 12:30:00 +0300 +03'>January 26, 2026</span>&nbsp;·&nbsp;<span>Selim Kaan Ozsoy, Middle East Technical University</span></footer>
+  <a class="entry-link" aria-label="post link to Homogeneous Differential Equations" href="http://localhost:1313/posts/homogenus-diff/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Initial Value Problems
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p> Definition. First-order differential equations are differential equations that only involve the first order derivatives of a specific variable with respect to another variable.
+Examples:
+$$ \frac{dy}{dx}=2x, \qquad y’= \arctan(x) &#43; e^x, \qquad (2xe^x)\left(\frac{dy}{dx}\right)=\sin(\arctan(x)) $$
+Definition. Degrees of freedom refers to the number of independent data that can successfully estimate a parameter.
+This may feel a little vague. But think about this; you have computed the result of an indefinite integral, say
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-01-22 12:30:00 +0300 +03'>January 22, 2026</span>&nbsp;·&nbsp;<span>Selim Kaan Ozsoy, Middle East Technical University</span></footer>
+  <a class="entry-link" aria-label="post link to Initial Value Problems" href="http://localhost:1313/posts/initial-value/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Newton&#39;s Law of Cooling
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Newton’s Law of Cooling is a fundamental principle in heat transfer. It states that the rate at which a body loses heat is directly proportional to the difference between its temperature and that of its surrounding environment.
+As this definition suggests, the study of Newton’s Law of Cooling inherently involves differential equations. In fact, the applications of differential equations are extremely broad, since many natural phenomena can be described and analyzed in terms of rates of change.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-01-22 03:00:00 +0300 +03'>January 22, 2026</span>&nbsp;·&nbsp;<span>Selim Kaan Ozsoy, Middle East Technical University</span></footer>
+  <a class="entry-link" aria-label="post link to Newton&#39;s Law of Cooling" href="http://localhost:1313/posts/newton/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Separable Equations
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p> Now, we consider some specific methods to solve differential equations. The aim is mostly to consider $y$ as a variable dependent on $x$ and solve the equation for $y$. It is, however, common to leave the expressions in implicit forms. One of the most elementary types of differential equations is separable equations.
+A first-order differential equation is said to be separable if it can be written in a form where all terms involving the dependent variable $y$ and its differential $dy$ appear on one side of the equation, while all terms involving the independent variable $x$ and its differential $dx$ appear on the other side.
+It looks like the following:
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-01-20 23:59:00 +0300 +03'>January 20, 2026</span>&nbsp;·&nbsp;<span>Selim Kaan Ozsoy, Middle East Technical University</span></footer>
+  <a class="entry-link" aria-label="post link to Separable Equations" href="http://localhost:1313/posts/separable-equations/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">A Friendly Introduction to Differential Equations
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>The key to jump into differential equations is to first understand the meaning of differentials in the first place. Consider $ dx $ or $ dy $, do they have a considerable meaning alone? The answer to this question is both yes and no, and this is actually one of some concepts which mathematicians and engineers, or applied mathematicians prefer dealing in different ways. In prereqruisite calculus, the reader studied differentiation and is familiar with the expression $\frac{dy}{dx}$. This mathematical expression tells us how fast the dependent variable $y$ changes.
+In the study of differential equations, the symbols $dx$ and $dy$ will be treated as if they were fractions rather than operators, and we will assume that basic algebraic manipulations apply to these expressions.
+It should be understood, however, that each such manipulation is ultimately justified by fundamental results of calculus, such as the chain rule or the manipulations of the limit definition of derivatives. Here, for simplicity, these justifications will not be proved, and will rely instead on intuitive reasoning. From now on, under these circumstances, we call $dx$, where $x$ is the expression of any variable, a differential.
+Now, let’s talk about the equations that involve differentials, which are evidently called differential equations. Consider $$\frac{dy}{dx}=2$$ This is a familiar expression. We infer, here, letting $y$ be the dependent variable, that an infinitesimal change in $x$, say $dx$, results in a change of $2dx$ in $y$. But also, we can infer that the derivative of such $y$ is equal to 2 in the corresponding domain, everywhere. Considering these, we can furthermore evolve our understanding and say $y$ is a function of $x$ and it is of the form $y(x)= 2x &#43; C $, where C is a constant. Apparently, C can take any value, so long as it is a arbitrary constant, since the derivative of C with respect to $x$ is identically zero.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-01-20 00:00:00 +0000 UTC'>January 20, 2026</span>&nbsp;·&nbsp;<span>Selim Kaan Ozsoy, Middle East Technical University</span></footer>
+  <a class="entry-link" aria-label="post link to A Friendly Introduction to Differential Equations" href="http://localhost:1313/posts/introtodiff/"></a>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="http://localhost:1313/">CrichMath</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

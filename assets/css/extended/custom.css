@@ -1,0 +1,428 @@
+/* White-Blue Color Palette Customization & Header Overrides */
+
+:root {
+    /* Light Mode - White Background, Blue Accents */
+    --theme: #ffffff;
+    --entry: #ffffff;
+    --primary: #212529;
+    /* Dark gray for main text */
+    --secondary: #6c757d;
+    --tertiary: #dee2e6;
+    --content: #212529;
+    --code-block-bg: #f8f9fa;
+    --code-bg: #f1f3f5;
+    --border: #e9ecef;
+
+    /* Custom Accent - Bootstrap Blue 500 */
+    --accent: #0d6efd;
+}
+
+:root[data-theme="dark"] {
+    /* Dark Mode - Dark Gray Background, Light Blue Accents */
+    --theme: #121212;
+    --entry: #1e1e1e;
+    --primary: #dee2e6;
+    --secondary: #adb5bd;
+    --tertiary: #495057;
+    --content: #dee2e6;
+    --code-block-bg: #1e1e1e;
+    --code-bg: #212529;
+    --border: #343a40;
+
+    /* Custom Accent - Bootstrap Blue 300 */
+    --accent: #6ea8fe;
+}
+
+/* Global Link Styling (Body) */
+a {
+    color: var(--accent);
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: var(--primary);
+    text-decoration: underline;
+}
+
+/* Button & Nav Customization */
+.button {
+    background: var(--accent);
+    color: white;
+}
+
+/* HEADER CUSTOMIZATION */
+
+/* Light Mode Header - RED Background, WHITE Text */
+.header {
+    background: #8b0000;
+    /* Darker Red */
+    color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for depth */
+}
+
+/* Ensure all links in header are white */
+.header a {
+    color: white !important;
+    /* Force override accent color */
+}
+
+.header a:hover {
+    color: #f8f9fa !important;
+    /* Slightly off-white on hover */
+    text-decoration: none;
+    /* Clean look */
+}
+
+/* Moon/Sun Icon color fix */
+.header button {
+    color: white;
+}
+
+/* Dark Mode Header - JET BLACK Background, WHITE Text */
+:root[data-theme="dark"] .header {
+    background: #000000;
+    /* Pure Black (darker than --theme #121212) */
+    color: white;
+    border-bottom: 1px solid #333;
+}
+
+:root[data-theme="dark"] .header a {
+    color: white !important;
+}
+
+/* Active Menu Item Style in Header */
+.header #menu .active {
+    border-bottom: 2px solid white;
+    /* White underline for active item */
+}
+
+
+
+/* Header height auto to accommodate wrapping menu items */
+/* Header container width - Widen for large screens */
+:root {
+    --nav-width: 1600px !important;
+    /* Widen to 1600px per request */
+}
+
+/* Header inner layout - Center the container */
+.nav {
+    height: auto !important;
+    min-height: var(--header-height);
+    padding: 0.5rem 0 !important;
+    align-items: center !important;
+    margin: 0 auto !important;
+    /* Ensure centered */
+    width: 100% !important;
+}
+
+/* Menu spacing - Spread items across the available space */
+/* Menu spacing - Spread items across the available space */
+/* Menu spacing - Spread items across the available space */
+#menu {
+    display: flex !important;
+    gap: 2rem !important;
+    flex: 0 0 auto !important;
+    /* Do not grow, just take needed space */
+    justify-content: flex-end !important;
+    margin-left: auto !important;
+    /* Push to the right */
+    padding-right: 0 !important;
+    overflow-x: visible !important;
+    flex-wrap: wrap !important;
+    white-space: normal !important;
+    align-items: center !important;
+    line-height: normal !important;
+}
+
+/* Menu items styling */
+#menu a {
+    display: inline-block;
+    line-height: 1.3;
+    text-align: center;
+    font-size: 16px;
+    padding: 5px 10px;
+}
+
+#menu li {
+    white-space: normal !important;
+    display: flex;
+    align-items: center;
+}
+
+#menu li:last-child {
+    margin-right: 0 !important;
+}
+
+/* On very large screens, ensure it doesn't look too scattered */
+@media (min-width: 1600px) {
+    #menu {
+        gap: 2.5rem !important;
+        /* Slightly larger gap on huge screens */
+    }
+}
+
+
+
+/* Breadcrumbs Color Fix - Match Body Text */
+.breadcrumbs {
+    color: var(--primary) !important;
+}
+
+.breadcrumbs a {
+    color: inherit !important;
+}
+
+/* HOMEPAGE CATEGORIES - CLASSY STYLE - VERTICAL LAYOUT */
+.terms-tags {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    list-style: none;
+    padding: 20px 0;
+}
+
+.terms-tags li {
+    margin: 0;
+    width: 100%;
+    max-width: 400px;
+}
+
+.terms-tags a {
+    display: block;
+    padding: 15px 30px;
+    background: var(--entry);
+    color: var(--primary) !important;
+    /* Black (light) / White (dark) */
+    font-size: 1.25rem;
+    font-weight: 500;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.terms-tags a:hover {
+    background: var(--primary);
+    color: var(--theme) !important;
+    /* Inverted colors on hover */
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.terms-tags sup {
+    font-size: 0.75rem;
+    color: var(--secondary);
+    margin-left: 5px;
+}
+
+/* Logo positioning - Move CrichMath to the absolute left */
+.logo {
+    padding: 0 !important;
+    margin: 0 !important;
+    padding-left: 1.5em !important;
+    display: inline-flex !important;
+    flex: 0 0 auto !important;
+    align-items: center !important;
+}
+
+.logo a {
+    padding: 0 !important;
+    margin: 0 !important;
+    display: inline !important;
+    white-space: nowrap !important;
+}
+
+.nav {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    padding-left: 1.5em !important;
+    padding-right: 10px !important;
+    width: 100% !important;
+}
+
+/* Force header nav to align items to the left */
+.header .nav {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: flex-start !important;
+    align-items: center !important;
+    flex-wrap: nowrap !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.header {
+    padding-left: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+}
+
+.logo-switches {
+    display: flex !important;
+    flex-direction: row !important;
+    margin-left: 1em !important;
+    margin-right: 0 !important;
+    align-items: center !important;
+    align-self: center !important;
+    order: 2 !important;
+}
+
+/* Homepage title and description - Left align */
+.page-header {
+    text-align: left !important;
+}
+
+.page-header h1 {
+    text-align: left !important;
+}
+
+.post-description {
+    text-align: left !important;
+}
+
+/* --- MIGRATED & IMPROVED RESPONSIVE LAYOUT (CSS GRID) --- */
+
+/* Standard content width - Use percentages for fluid margins */
+.main {
+    max-width: 1200px !important;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 4%;
+    /* Responsive padding (was fixed 40px) */
+    box-sizing: border-box;
+    /* Ensure padding doesn't increase width */
+}
+
+/* Homepage Grid Layout - Adapts to screen width */
+.home-content-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 350px;
+    /* Fluid Main Content | Fixed Sidebar */
+    gap: 3rem;
+    align-items: start;
+    margin-top: 3rem;
+    width: 100%;
+}
+
+
+.categories-section {
+    width: 100%;
+    min-width: 0;
+    /* Prevent grid overflow issues */
+}
+
+/* Contact Sidebar Styling */
+.contact-sidebar {
+    width: 100%;
+    /* Fill the grid column */
+    background: var(--entry);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1.75rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+    height: fit-content;
+    /* Don't stretch vertically */
+}
+
+.contact-sidebar h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--primary);
+    margin: 0 0 1.25rem 0;
+    padding-bottom: 0.75rem;
+    border-bottom: 2px solid var(--border);
+}
+
+.contact-content p {
+    color: var(--secondary);
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.contact-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1rem;
+    background: rgba(0, 0, 0, 0.02);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    text-decoration: none;
+    color: var(--primary);
+    font-size: 0.95rem;
+    transition: all 0.2s ease;
+    font-weight: 500;
+}
+
+:root[data-theme="dark"] .contact-item {
+    background: rgba(255, 255, 255, 0.03);
+}
+
+.contact-item:hover {
+    background: var(--accent);
+    color: white !important;
+    border-color: var(--accent);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.contact-icon {
+    font-size: 1.1rem;
+}
+
+/* RESPONSIVE BREAKPOINTS */
+
+/* Medium Screens (Small Laptops / Large Tablets) */
+@media (max-width: 1024px) {
+    .home-content-wrapper {
+        gap: 2rem;
+        grid-template-columns: 1fr 300px;
+        /* Compress sidebar slightly */
+    }
+
+    .contact-sidebar {
+        padding: 1.25rem;
+    }
+}
+
+/* Tablets & Mobile - Stack vertically */
+@media (max-width: 850px) {
+    .home-content-wrapper {
+        display: flex;
+        flex-direction: column;
+        /* Stack vertically */
+        gap: 2.5rem;
+    }
+
+    .categories-section {
+        width: 100%;
+        order: 1;
+    }
+
+
+    .home-content-wrapper>.contact-sidebar {
+        width: 100%;
+        max-width: 100%;
+        order: 2;
+        /* Sidebar below content */
+    }
+
+    .main {
+        padding: 0 20px !important;
+        /* Smaller padding on mobile */
+    }
+}
