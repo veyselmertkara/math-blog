@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Differential Equations on CrichMath</title>
-    <link>http://localhost:1313/categories/differential-equations/</link>
+    <link>//localhost:1313/categories/differential-equations/</link>
     <description>Recent content in Differential Equations on CrichMath</description>
     <generator>Hugo -- 0.154.5</generator>
     <language>tr-tr</language>
     <lastBuildDate>Mon, 26 Jan 2026 12:30:00 +0300</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/differential-equations/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/categories/differential-equations/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Homogeneous Differential Equations</title>
-      <link>http://localhost:1313/posts/homogenus-diff/</link>
+      <link>//localhost:1313/posts/homogenus-diff/</link>
       <pubDate>Mon, 26 Jan 2026 12:30:00 +0300</pubDate>
-      <guid>http://localhost:1313/posts/homogenus-diff/</guid>
+      <guid>//localhost:1313/posts/homogenus-diff/</guid>
       <description>&lt;p&gt; Some first order ordinary differential equations are not separable, but we can convert them into separable equations after applying simple substitution. Such equations are called &lt;span style=&#34;color: red&#34;&gt;homogeneous equations&lt;/span&gt;. In this section, we will discuss how to apply this substitution and solve such equations.&lt;br&gt;
  &lt;strong&gt;Definition.&lt;/strong&gt; A first order ordinary differential equation is called &lt;span style=&#34;color: red&#34;&gt;homogeneous&lt;/span&gt; if it can be expressed in the form&lt;/p&gt;
 &lt;p&gt;$$
@@ -24,9 +24,9 @@ The given expression may seem a little devious, but an equivalent and often more
     </item>
     <item>
       <title>Initial Value Problems</title>
-      <link>http://localhost:1313/posts/initial-value/</link>
+      <link>//localhost:1313/posts/initial-value/</link>
       <pubDate>Thu, 22 Jan 2026 12:30:00 +0300</pubDate>
-      <guid>http://localhost:1313/posts/initial-value/</guid>
+      <guid>//localhost:1313/posts/initial-value/</guid>
       <description>&lt;p&gt; &lt;strong&gt;Definition.&lt;/strong&gt; First-order differential equations are differential equations that only involve the first order derivatives of a specific variable with respect to another variable.&lt;/p&gt;
 &lt;p&gt; &lt;span style=&#34;color: orange&#34;&gt;Examples:&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;$$
@@ -39,26 +39,26 @@ $$&lt;/p&gt;
     </item>
     <item>
       <title>Newton&#39;s Law of Cooling</title>
-      <link>http://localhost:1313/posts/newton/</link>
+      <link>//localhost:1313/posts/newton/</link>
       <pubDate>Thu, 22 Jan 2026 03:00:00 +0300</pubDate>
-      <guid>http://localhost:1313/posts/newton/</guid>
+      <guid>//localhost:1313/posts/newton/</guid>
       <description>&lt;p&gt;Newton&amp;rsquo;s Law of Cooling is a fundamental principle in heat transfer. It states that the rate at which a body loses heat is directly proportional to the difference between its temperature and that of its surrounding environment.&lt;/p&gt;
 &lt;p&gt;As this definition suggests, the study of Newton&amp;rsquo;s Law of Cooling inherently involves differential equations. In fact, the applications of differential equations are extremely broad, since many natural phenomena can be described and analyzed in terms of rates of change.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Separable Equations</title>
-      <link>http://localhost:1313/posts/separable-equations/</link>
+      <link>//localhost:1313/posts/separable-equations/</link>
       <pubDate>Tue, 20 Jan 2026 23:59:00 +0300</pubDate>
-      <guid>http://localhost:1313/posts/separable-equations/</guid>
+      <guid>//localhost:1313/posts/separable-equations/</guid>
       <description>&lt;p&gt; Now, we consider some specific methods to solve differential equations. The aim is mostly to consider $y$ as a variable dependent on $x$ and solve the equation for $y$. It is, however, common to leave the expressions in implicit forms. One of the most elementary types of differential equations is separable equations.&lt;br&gt;
  A first-order differential equation is said to be separable if it can be written in a form where all terms involving the dependent variable $y$ and its differential $dy$ appear on one side of the equation, while all terms involving the independent variable $x$ and its differential $dx$ appear on the other side.&lt;br&gt;
 It looks like the following:&lt;/p&gt;</description>
     </item>
     <item>
       <title>A Friendly Introduction to Differential Equations</title>
-      <link>http://localhost:1313/posts/introtodiff/</link>
+      <link>//localhost:1313/posts/introtodiff/</link>
       <pubDate>Tue, 20 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/introtodiff/</guid>
+      <guid>//localhost:1313/posts/introtodiff/</guid>
       <description>&lt;p&gt;The key to jump into differential equations is to first understand the meaning of differentials in the first place. Consider $ dx $ or $ dy $, do they have a considerable meaning alone? The answer to this question is both yes and no, and this is actually one of some concepts which mathematicians and engineers, or applied mathematicians prefer dealing in different ways.
 In prereqruisite calculus, the reader studied differentiation and is familiar with the expression $\frac{dy}{dx}$. This mathematical expression tells us how fast the dependent variable $y$ changes.&lt;br&gt;
  In the study of differential equations, the symbols $dx$ and $dy$ will be treated as if they were fractions rather than operators, and we will assume that basic algebraic manipulations apply to these expressions.&lt;br&gt;

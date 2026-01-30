@@ -1,4 +1,4 @@
-baseURL: "https://senin-kullanici-adin.github.io/"
+baseURL: "/"
 languageCode: "tr-tr"
 title: "CrichMath" # Tarayıcı sekmesinde görünecek isim
 theme: "PaperMod"
