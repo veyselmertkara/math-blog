@@ -98,3 +98,5 @@ t_{0} &= \frac{5 \ln 6}{\ln 3}\approx7~min
 $$
 
 Finally, we conclude that after the temperature of the water reaches $50^{\circ}C$, an additional <span style="color: red">2 minutes</span> are required for it to decrease to $40^{\circ}C$.
+
+{{< pdf "Newton_s_Law_of_Cooling.pdf" >}}

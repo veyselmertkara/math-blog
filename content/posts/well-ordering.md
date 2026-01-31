@@ -73,3 +73,5 @@ $$
 Observe that $S$ is a subset of $\mathbb{N}$, since $b,n,a \in \mathbb{N}$ and so $b-na \in \mathbb{Z}$ (and since it is $>0$, it is in $\mathbb{N}$). Furthermore, assuming that $n=1 \in \mathbb{N}$ and $b>a$ and so $b-a>0$, we have $b-a \in S$. Therefore, $S$ is nonempty. Hence, according to Well Ordering Principle, $S$ has a least element.
 
 Let $x$ be the least element of $S$. Hence, by definition of $S$, $x=b-\tilde{n}a$ for some arbitrary $\tilde{n} \in \mathbb{N}$. But then, $b-(\tilde{n}+1)a$ is also an element of $S$. It follows that $b-(\tilde{n}+1)a < b-\tilde{n}a$, which contradicts the fact that $b-\tilde{n}a$ is the least element of $S$.
+
+{{< pdf "Well_Ordering_Principle.pdf" >}}

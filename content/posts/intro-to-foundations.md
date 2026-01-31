@@ -58,3 +58,5 @@ This law is considered by Aristotle to be the most fundamental principle of logi
 &emsp; &emsp; "Either A is true, or its negation is true."
 
 The Law of Excluded Middle asserts that there is no third option between truth and falsity. Every meaningful statement must fall into one of these two categories.
+
+{{< pdf "Foundations_of_Mathematical_Reasoning.pdf" >}}

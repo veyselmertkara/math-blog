@@ -123,3 +123,5 @@ $$
 $$
 \frac{\ln\left(1+y^2\right)}{2} = \ln(x) + \frac{x^2}{2} + \ln\left(\sqrt{\frac{2}{e}}\right).
 $$
+
+{{< pdf "Initial_Value_Problems.pdf" >}}

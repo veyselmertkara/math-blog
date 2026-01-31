@@ -69,3 +69,5 @@ a_{k+1} =2k+3=2(k+1) + 1.
 $$
 
 Hence, by principle of strong induction, for all $n \geq 0$, $a_n=2n+1.$
+
+{{< pdf "Strong_Induction.pdf" >}}

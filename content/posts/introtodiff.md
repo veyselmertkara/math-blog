@@ -51,3 +51,5 @@ style="width: 100%; height: auto; font-family: 'Times New Roman', Times, serif;"
 </div>
 
 Considering these, the reader is encouraged to explore direction fields.
+
+{{< pdf "ODE.pdf" >}}

@@ -120,13 +120,15 @@
 </header>
 
 <script>
-    const menuTrigger = document.getElementById('menu-trigger');
-    const menu = document.getElementById('menu');
+    (function () {
+        const menuTrigger = document.getElementById('menu-trigger');
+        const menu = document.getElementById('menu');
 
-    if (menuTrigger && menu) {
-        menuTrigger.addEventListener('click', function (e) {
-            e.preventDefault();
-            menu.classList.toggle('show-mobile-menu');
-        });
-    }
+        if (menuTrigger && menu) {
+            menuTrigger.addEventListener('click', function (e) {
+                e.preventDefault();
+                menu.classList.toggle('show-mobile-menu');
+            });
+        }
+    })();
 </script>

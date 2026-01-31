@@ -58,3 +58,5 @@ For any $a \in \mathbb{Z}$, one and only one of the following holds:
 
 **Definition.** <span style="color: red">Axiom</span> is a statement assumed to be true without any proof.  
 &emsp;We construct our mathematical structures and theorems using axioms.
+
+{{< pdf "Introduction_to_Elementary_Number_Theory.pdf" >}}

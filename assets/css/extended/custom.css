@@ -511,3 +511,41 @@ a:hover {
         background: #000000;
     }
 }
+
+/* PDF Link Styling */
+.pdf-link-container {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+}
+
+.pdf-link {
+    font-size: 2.3rem;
+    /* 3rem -> 2.3rem */
+    font-weight: 700;
+    text-decoration: underline !important;
+    /* Tek çizgi olması için */
+    text-decoration-thickness: 2px !important;
+    /* Çizgi kalınlığı */
+    border-bottom: none !important;
+    /* Olası ekstra çizgileri kaldır */
+    box-shadow: none !important;
+    /* Olası gölge çizgilerini kaldır */
+
+    /* Light Mode Default: Red */
+    color: #d32f2f !important;
+}
+
+.pdf-link:hover {
+    opacity: 0.8;
+    text-decoration: none !important;
+    /* Hover'da çizgi kalksın mı? Genelde kalkmaz ama temiz görünüm için opsiyonel. User istemedi ama 'link' sonuçta. Standart kalsın ya da sadece renk değişsin. */
+    /* Kullanıcı sadece alt çizgi sayısından bahsetti. Hover durumunu bozmayalım. */
+    text-decoration: underline !important;
+}
+
+:root[data-theme="dark"] .pdf-link {
+    /* Dark Mode: Light Blue */
+    color: #64b5f6 !important;
+}

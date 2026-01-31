@@ -251,3 +251,5 @@ Therefore, the solution of the IVP is
 $$
 y=x \ln x +2x.
 $$
+
+{{< pdf "Homogenous_Equations.pdf" >}}

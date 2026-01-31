@@ -95,3 +95,5 @@ $$
 $$
 
 Here, we note that it is natural to leave $\arctan(y)$, since the transformation from $\arctan(y)$ to $y$ requires a careful analysis of the interval of $y,$ as the inverse trigonometric functions are defined on restricted intervals.
+
+{{< pdf "Separable_Equations.pdf" >}}
