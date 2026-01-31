@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>CrichMath</title>
-    <link>//localhost:1313/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content on CrichMath</description>
     <generator>Hugo -- 0.154.5</generator>
     <language>tr-tr</language>
     <lastBuildDate>Fri, 30 Jan 2026 21:28:00 +0300</lastBuildDate>
-    <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Strong Induction</title>
-      <link>//localhost:1313/posts/strong/</link>
+      <link>http://localhost:1313/posts/strong/</link>
       <pubDate>Fri, 30 Jan 2026 21:28:00 +0300</pubDate>
-      <guid>//localhost:1313/posts/strong/</guid>
+      <guid>http://localhost:1313/posts/strong/</guid>
       <description>&lt;p&gt; &lt;strong&gt;Theorem.(Strong Induction)&lt;/strong&gt; Let $\phi(n)$ be a property of natural numbers. Suppose that $\phi(1)$ holds and for all $n \in \mathbb{N}$, if $\phi(1)$, $\phi(2)$, $\dots$, $\phi(n)$ hold, then $\phi(n+1)$ holds. Then $\phi(n)$ holds for all $n \in \mathbb{N}$.&lt;br&gt;
  Also, we can express this theorem in a similar way to what we did in the previous note as follows:&lt;br&gt;
  Let $S \subseteq \mathbb{N}$. If&lt;/p&gt;
@@ -21,9 +21,9 @@
     </item>
     <item>
       <title>Foundations of Mathematical Reasoning</title>
-      <link>//localhost:1313/posts/intro-to-foundations/</link>
+      <link>http://localhost:1313/posts/intro-to-foundations/</link>
       <pubDate>Fri, 30 Jan 2026 20:59:00 +0300</pubDate>
-      <guid>//localhost:1313/posts/intro-to-foundations/</guid>
+      <guid>http://localhost:1313/posts/intro-to-foundations/</guid>
       <description>&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
 &lt;p&gt;Mathematics is not only a collection of formulas and computations, but also a discipline built upon precise reasoning. Before engaging with advanced mathematical structures, it is essential to understand the logical foundations that govern how mathematical statements are formed, interpreted, and justified. This section is devoted to developing that foundational perspective.&lt;br&gt;
  We begin with the classical roots of logic, tracing the basic principles of reasoning back to Aristotle’s formulation of logical laws. From there, we study propositional logic: logical connectives, compound statements, and truth tables, which provide a concrete and systematic way to analyze the validity of logical expressions. These tools allow us to determine when statements are true, false, or logically equivalent, independent of any particular mathematical context.&lt;br&gt;
@@ -31,9 +31,9 @@
     </item>
     <item>
       <title>Mathematical Induction and the Successor Function</title>
-      <link>//localhost:1313/posts/math/</link>
+      <link>http://localhost:1313/posts/math/</link>
       <pubDate>Fri, 30 Jan 2026 20:59:00 +0300</pubDate>
-      <guid>//localhost:1313/posts/math/</guid>
+      <guid>http://localhost:1313/posts/math/</guid>
       <description>&lt;p&gt;In mathematics, most basic operations feel intuitive. Consider multiplication or summation. We, without any mathematical thinking, only apply the algorithms that will give us the answer. However, every mathematical algorithm, actually, originate from some theorems.&lt;br&gt;
  In this part, before mathematical induction, it is important to know the Successor Function and its applications, and furthermore, how it is related to induction.&lt;br&gt;
  Let there be a function whose domain and codomain is $\mathbb{N}$ with the property that every natural number has the image of the successor natural number under this function.&lt;br&gt;
@@ -47,9 +47,9 @@ In other words, the successor function is given by $S : \mathbb{N} \to \mathbb{N
     </item>
     <item>
       <title>Well Ordering Principle</title>
-      <link>//localhost:1313/posts/well-ordering/</link>
+      <link>http://localhost:1313/posts/well-ordering/</link>
       <pubDate>Fri, 30 Jan 2026 19:59:00 +0300</pubDate>
-      <guid>//localhost:1313/posts/well-ordering/</guid>
+      <guid>http://localhost:1313/posts/well-ordering/</guid>
       <description>&lt;p&gt; &lt;strong&gt;Well Ordering Principle:&lt;/strong&gt; Every nonempty subset of $\mathbb{N}$ has a least element, i.e., there exists $a \in S$ such that $x \geq a$ for all $x \in S$.&lt;br&gt;
  This principle may seem a little obvious. The conditions, however, are considerable. Notice that, firstly, we need a nonempty set. The reason is trivial to comprehend, as the empty set has no elements and therefore it cannot have a least element. Furthermore, the set must be a subset of $\mathbb{N}$.&lt;br&gt;
  We can consider some sets and determine whether they satisfy the Well Ordering Principle, i.e., they are well ordered.
@@ -58,9 +58,9 @@ In other words, the successor function is given by $S : \mathbb{N} \to \mathbb{N
     </item>
     <item>
       <title>Introduction to Elementary Number Theory</title>
-      <link>//localhost:1313/posts/intro-number-theory/</link>
+      <link>http://localhost:1313/posts/intro-number-theory/</link>
       <pubDate>Mon, 26 Jan 2026 18:15:00 +0300</pubDate>
-      <guid>//localhost:1313/posts/intro-number-theory/</guid>
+      <guid>http://localhost:1313/posts/intro-number-theory/</guid>
       <description>&lt;p&gt; Elementary number theory is the branch of mathematics concerned with the study of the integers and their fundamental properties.&lt;br&gt;
  Unlike many areas of mathematics that rely heavily on continuous structures, number theory focuses on discrete objects and exact relationships. Its questions are often simple to state, yet surprisingly deep, and many have shaped the development of modern mathematics.&lt;br&gt;
  At its core, number theory seeks to understand the structure of the integers: how numbers divide one another, how primes are distributed, and how arithmetic behaves under various constraints.&lt;br&gt;
@@ -69,9 +69,9 @@ In other words, the successor function is given by $S : \mathbb{N} \to \mathbb{N
     </item>
     <item>
       <title>Homogeneous Differential Equations</title>
-      <link>//localhost:1313/posts/homogenus-diff/</link>
+      <link>http://localhost:1313/posts/homogenus-diff/</link>
       <pubDate>Mon, 26 Jan 2026 12:30:00 +0300</pubDate>
-      <guid>//localhost:1313/posts/homogenus-diff/</guid>
+      <guid>http://localhost:1313/posts/homogenus-diff/</guid>
       <description>&lt;p&gt; Some first order ordinary differential equations are not separable, but we can convert them into separable equations after applying simple substitution. Such equations are called &lt;span style=&#34;color: red&#34;&gt;homogeneous equations&lt;/span&gt;. In this section, we will discuss how to apply this substitution and solve such equations.&lt;br&gt;
  &lt;strong&gt;Definition.&lt;/strong&gt; A first order ordinary differential equation is called &lt;span style=&#34;color: red&#34;&gt;homogeneous&lt;/span&gt; if it can be expressed in the form&lt;/p&gt;
 &lt;p&gt;$$
@@ -83,9 +83,9 @@ The given expression may seem a little devious, but an equivalent and often more
     </item>
     <item>
       <title>Initial Value Problems</title>
-      <link>//localhost:1313/posts/initial-value/</link>
+      <link>http://localhost:1313/posts/initial-value/</link>
       <pubDate>Thu, 22 Jan 2026 12:30:00 +0300</pubDate>
-      <guid>//localhost:1313/posts/initial-value/</guid>
+      <guid>http://localhost:1313/posts/initial-value/</guid>
       <description>&lt;p&gt; &lt;strong&gt;Definition.&lt;/strong&gt; First-order differential equations are differential equations that only involve the first order derivatives of a specific variable with respect to another variable.&lt;/p&gt;
 &lt;p&gt; &lt;span style=&#34;color: orange&#34;&gt;Examples:&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;$$
@@ -98,26 +98,26 @@ $$&lt;/p&gt;
     </item>
     <item>
       <title>Newton&#39;s Law of Cooling</title>
-      <link>//localhost:1313/posts/newton/</link>
+      <link>http://localhost:1313/posts/newton/</link>
       <pubDate>Thu, 22 Jan 2026 03:00:00 +0300</pubDate>
-      <guid>//localhost:1313/posts/newton/</guid>
+      <guid>http://localhost:1313/posts/newton/</guid>
       <description>&lt;p&gt;Newton&amp;rsquo;s Law of Cooling is a fundamental principle in heat transfer. It states that the rate at which a body loses heat is directly proportional to the difference between its temperature and that of its surrounding environment.&lt;/p&gt;
 &lt;p&gt;As this definition suggests, the study of Newton&amp;rsquo;s Law of Cooling inherently involves differential equations. In fact, the applications of differential equations are extremely broad, since many natural phenomena can be described and analyzed in terms of rates of change.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Separable Equations</title>
-      <link>//localhost:1313/posts/separable-equations/</link>
+      <link>http://localhost:1313/posts/separable-equations/</link>
       <pubDate>Tue, 20 Jan 2026 23:59:00 +0300</pubDate>
-      <guid>//localhost:1313/posts/separable-equations/</guid>
+      <guid>http://localhost:1313/posts/separable-equations/</guid>
       <description>&lt;p&gt; Now, we consider some specific methods to solve differential equations. The aim is mostly to consider $y$ as a variable dependent on $x$ and solve the equation for $y$. It is, however, common to leave the expressions in implicit forms. One of the most elementary types of differential equations is separable equations.&lt;br&gt;
  A first-order differential equation is said to be separable if it can be written in a form where all terms involving the dependent variable $y$ and its differential $dy$ appear on one side of the equation, while all terms involving the independent variable $x$ and its differential $dx$ appear on the other side.&lt;br&gt;
 It looks like the following:&lt;/p&gt;</description>
     </item>
     <item>
       <title>A Friendly Introduction to Differential Equations</title>
-      <link>//localhost:1313/posts/introtodiff/</link>
+      <link>http://localhost:1313/posts/introtodiff/</link>
       <pubDate>Tue, 20 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/posts/introtodiff/</guid>
+      <guid>http://localhost:1313/posts/introtodiff/</guid>
       <description>&lt;p&gt;The key to jump into differential equations is to first understand the meaning of differentials in the first place. Consider $ dx $ or $ dy $, do they have a considerable meaning alone? The answer to this question is both yes and no, and this is actually one of some concepts which mathematicians and engineers, or applied mathematicians prefer dealing in different ways.
 In prereqruisite calculus, the reader studied differentiation and is familiar with the expression $\frac{dy}{dx}$. This mathematical expression tells us how fast the dependent variable $y$ changes.&lt;br&gt;
  In the study of differential equations, the symbols $dx$ and $dy$ will be treated as if they were fractions rather than operators, and we will assume that basic algebraic manipulations apply to these expressions.&lt;br&gt;
