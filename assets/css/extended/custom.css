@@ -426,3 +426,37 @@ a:hover {
         /* Smaller padding on mobile */
     }
 }
+
+/* MOBILE SPECIFIC ADJUSTMENTS (Max 768px for real mobile feel) */
+@media (max-width: 768px) {
+
+    /* 1. Kapsayıcı boşluğu (Artırıldı) */
+    .main {
+        padding: 0 30px !important;
+    }
+
+    /* 2. Gövde metnini büyüt (Okuma kolaylığı) */
+    body,
+    p,
+    li,
+    a {
+        font-size: 18px !important;
+        line-height: 1.6;
+    }
+
+    /* 3. Başlıkları küçült (Ekrana taşmasın) */
+    h1 {
+        font-size: 1.75rem !important;
+        /* Yaklaşık 28px */
+        line-height: 1.3;
+    }
+
+    h2 {
+        font-size: 1.5rem !important;
+        /* Yaklaşık 24px */
+    }
+
+    h3 {
+        font-size: 1.3rem !important;
+    }
+}
