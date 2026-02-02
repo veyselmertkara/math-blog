@@ -49,9 +49,23 @@
         <h2>Contact</h2>
         <div class="contact-content">
             <div class="contact-links">
-                <a href="mailto:ozsoy.kaan@metu.edu.tr" class="contact-item">
-                    <span class="contact-icon">✉️</span> ozsoy.kaan@metu.edu.tr
+                <!-- Email Obfuscation -->
+                <a href="#" class="contact-item" id="mail-link">
+                    <span class="contact-icon">✉️</span>
+                    <span id="mail-text">Loading...</span>
                 </a>
+                <script>
+                    (function () {
+                        var _u = "ozsoy.kaan";
+                        var _d = "metu.edu.tr";
+                        var _l = document.getElementById('mail-link');
+                        var _t = document.getElementById('mail-text');
+                        if (_l && _t) {
+                            _l.href = "mailto:" + _u + "@" + _d;
+                            _t.innerText = _u + "@" + _d;
+                        }
+                    })();
+                </script>
                 <a href="https://www.instagram.com/kaan.ozsy/" target="_blank" rel="noopener noreferrer"
                     class="contact-item">
                     <span class="contact-icon">📸</span> Instagram

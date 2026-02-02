@@ -1,0 +1,25 @@
+# Hugo default output
+public/
+resources/
+.hugo_build.lock
+
+# Dependency directories
+node_modules/
+package-lock.json
+yarn.lock
+
+# OS Generated
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Environment variables (Critical)
+.env
+.dev.vars
