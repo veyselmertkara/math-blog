@@ -13,13 +13,32 @@
 <div class="home-content-wrapper">
     <div class="categories-section">
         <ul class="terms-tags">
-            {{- range $key, $value := site.Taxonomies.categories.Alphabetical }}
+            {{/* 1. Priority Categories */}}
+            {{- $priorityTitles := slice "Calculus I" "Calculus II" "Advanced Calculus" "Differential Equations" }}
+
+            {{- range $targetTitle := $priorityTitles }}
+            {{- range site.Taxonomies.categories.Alphabetical }}
+            {{- $name := .Name }}
+            {{- with site.GetPage (printf "/categories/%s" $name) }}
+            {{- if eq .Title $targetTitle }}
+            <li>
+                <a href="{{ .Permalink }}">{{ .Title }} <sup><strong><sup>{{ len .Pages }}</sup></strong></sup></a>
+            </li>
+            {{- end }}
+            {{- end }}
+            {{- end }}
+            {{- end }}
+
+            {{/* 2. Other Categories */}}
+            {{- range site.Taxonomies.categories.Alphabetical }}
             {{- $name := .Name }}
             {{- if ne $name "archive" }}
             {{- with site.GetPage (printf "/categories/%s" $name) }}
+            {{- if not (in $priorityTitles .Title) }}
             <li>
-                <a href="{{ .Permalink }}">{{ .Title }} <sup><strong><sup>{{ $value.Count }}</sup></strong></sup></a>
+                <a href="{{ .Permalink }}">{{ .Title }} <sup><strong><sup>{{ len .Pages }}</sup></strong></sup></a>
             </li>
+            {{- end }}
             {{- end }}
             {{- end }}
             {{- end }}
@@ -27,9 +46,8 @@
     </div>
 
     <aside class="contact-sidebar">
-        <h2>İletişim</h2>
+        <h2>Contact</h2>
         <div class="contact-content">
-            <p>Sorularınız, önerileriniz veya hata bildirimleriniz için iletişime geçebilirsiniz.</p>
             <div class="contact-links">
                 <a href="mailto:ozsoy.kaan@metu.edu.tr" class="contact-item">
                     <span class="contact-icon">✉️</span> ozsoy.kaan@metu.edu.tr
@@ -37,6 +55,10 @@
                 <a href="https://www.instagram.com/kaan.ozsy/" target="_blank" rel="noopener noreferrer"
                     class="contact-item">
                     <span class="contact-icon">📸</span> Instagram
+                </a>
+                <a href="https://www.linkedin.com/in/selim-kaan-%C3%B6zsoy-a18b45360?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+                    target="_blank" rel="noopener noreferrer" class="contact-item">
+                    <span class="contact-icon">💼</span> LinkedIn
                 </a>
                 <a href="https://github.com/veyselmertkara/math-blog" target="_blank" rel="noopener noreferrer"
                     class="contact-item">

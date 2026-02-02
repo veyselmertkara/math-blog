@@ -1,8 +1,9 @@
 ---
 title: "Mini Essays"
-description: "Kısa matematiksel denemeler ve notlar."
+description: "High-quality essays written without being tied to a specific topic, appealing to general interest in both English and Turkish."
 draft: false
 ---
+
 
 <div class="language-filter" style="margin-bottom: 2rem; display: flex; justify-content: center; gap: 1rem;">
     <button onclick="filterLanguage('en')" class="lang-btn active" id="btn-en">English</button>

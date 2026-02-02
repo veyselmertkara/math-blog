@@ -19,7 +19,7 @@ params:
   
   homeInfoParams:
     Title: "CrichMath" # Listenin tepesindeki büyük başlık
-    Content: "Lisans seviyesinde teorem ispatları, ders notları ve analizler." # Altındaki gri açıklama
+    Content: "Undergraduate-level, student-friendly mathematics lecture notes by Selim Kaan Ozsoy" # Altındaki gri açıklama
 
   socialIcons: []
   # --- YAZI DETAYLARI ---
