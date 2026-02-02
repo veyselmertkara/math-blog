@@ -63,7 +63,7 @@ To run this project locally on your machine, follow these steps:
 
 ### Developer & Maintainer
 **Veysel Mert Kara**
-- **Role:** Full Stack Development, Site Architecture & DevOps.
+- **Education:** Computer Engineering at Ankara University
 - **GitHub:** [veyselmertkara](https://github.com/veyselmertkara)
 - **LinkedIn:** [Veysel Mert Kara](https://www.linkedin.com/in/veysel-mert-kara-586765334 )
 
