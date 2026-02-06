@@ -546,7 +546,7 @@ a:hover {
     /* Olası gölge çizgilerini kaldır */
 
     /* Light Mode Default: Red */
-    color: #d32f2f !important;
+    color: #8EC6E8 !important;
 }
 
 .pdf-link:hover {
@@ -559,7 +559,7 @@ a:hover {
 
 :root[data-theme="dark"] .pdf-link {
     /* Dark Mode: Light Blue */
-    color: #64b5f6 !important;
+    color: #8EC6E8 !important;
 }
 
 /* Mobile Logo Fix */
