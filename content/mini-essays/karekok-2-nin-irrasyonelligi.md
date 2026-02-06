@@ -1,12 +1,20 @@
 ---
-title: "√2'nin İrrasyonelliği"
+title: "√2'nin İrrasyonelliği"           # <-- Sekmede ve Google'da bu görünür (Temiz)
+displayTitle: "$\\sqrt{2}$'nin İrrasyonelliği" # <-- Listede bu görünecek (Havalı)
 date: 2026-02-06
-author: "Selim Kaan Özsoy"
-description: "√2 sayısının irrasyonelliği üzerine tarihsel ve matematiksel bir inceleme."
+author: "Selim Kaan Özsoy, Orta Doğu Teknik Üniversitesi"
+lang: tr
 math: true
 ---
 
-**Selim Kaan Özsoy** *Middle East Technical University*
+<style>
+  .post-title { display: none; }       /* Temanın başlığını gizler */
+  .post-description { display: none; } /* Temanın açıklamasını gizler (YENİ) */
+</style>
+
+# $\sqrt{2}$'nin İrrasyonelliği
+
+*√2 sayısının irrasyonelliği üzerine tarihsel ve matematiksel bir inceleme.*
 
 ---
 
@@ -49,7 +57,7 @@ $$2b^2 = (2k)^2 \implies 2b^2 = 4k^2 \implies b^2 = 2k^2$$
 
 sonucu çıkar. Aynı gerekçeyle, $2$ sayısının $b$’yi de böldüğü sonucuna ulaşılır. Ancak burada dikkat edilmelidir ki, $2$ sayısı hem $a$’yı hem de $b$’yi bölmektedir.
 
-Oysa başlangıçta $a$ ve $b$’nin aralarında asal olduğunu varsaymıştık. Bu durum bir çelişkidir. Dolayısıyla, $\sqrt{2}$ bir irrasyonel sayıdır; çünkü rasyonel olduğu varsayımı çelişkiye yol açmaktadır. $\qed$
+Oysa başlangıçta $a$ ve $b$’nin aralarında asal olduğunu varsaymıştık. Bu durum bir çelişkidir. Dolayısıyla, $\sqrt{2}$ bir irrasyonel sayıdır; çünkü rasyonel olduğu varsayımı çelişkiye yol açmaktadır. 
 
 ---
 

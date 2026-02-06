@@ -561,3 +561,13 @@ a:hover {
     /* Dark Mode: Light Blue */
     color: #64b5f6 !important;
 }
+
+/* Mobile Logo Fix */
+@media (max-width: 768px) {
+    .logo img {
+        max-width: 150px !important;
+        /* Scale down for mobile */
+        height: auto !important;
+        /* Maintain aspect ratio */
+    }
+}

@@ -73,7 +73,7 @@
     {{- partial "cover.html" (dict "cxt" . "IsSingle" false "isHidden" $isHidden) }}
     <header class="entry-header">
         <h2 class="entry-hint-parent">
-            {{- .Title }}
+            <span>{{- .Params.displayTitle | default .Title }}</span>
             {{- if .Draft }}
             <span class="entry-hint" title="Draft">
                 <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" fill="currentColor">
@@ -123,5 +123,60 @@
 {{- end }}
 
 {{- end }}{{/* end profileMode */}}
+
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const urlParams = new URLSearchParams(window.location.search);
+        const filter = urlParams.get('filter') || 'en'; // Default to English
+
+        const posts = document.querySelectorAll('.post-entry');
+        const btnEn = document.getElementById('btn-en');
+        const btnTr = document.getElementById('btn-tr');
+
+        // Function to update visibility
+        function updateVisibility(lang) {
+            posts.forEach(post => {
+                if (post.classList.contains('lang-' + lang)) {
+                    post.style.display = 'block';
+                } else if (post.classList.contains('lang-en') || post.classList.contains('lang-tr')) {
+                    // Only hide if it has a lang class and it's not the target one
+                    // If it has NO lang class, maybe show it? For now hide.
+                    post.style.display = 'none';
+                }
+            });
+
+            // Update buttons
+            if (btnEn && btnTr) {
+                if (lang === 'en') {
+                    btnEn.classList.add('active');
+                    btnTr.classList.remove('active');
+                } else {
+                    btnTr.classList.add('active');
+                    btnEn.classList.remove('active');
+                }
+            }
+        }
+
+        updateVisibility(filter);
+
+        // Add click listeners to buttons to avoid reload if strictly necessary, 
+        // but href="?filter=..." works natively with reload which is fine. 
+        // For smoother exp:
+        if (btnEn && btnTr) {
+            btnEn.addEventListener('click', function (e) {
+                e.preventDefault();
+                history.pushState(null, '', '?filter=en');
+                updateVisibility('en');
+            });
+            btnTr.addEventListener('click', function (e) {
+                e.preventDefault();
+                history.pushState(null, '', '?filter=tr');
+                updateVisibility('tr');
+            });
+        }
+    });
+</script>
 
 {{- end }}{{- /* end main */ -}}

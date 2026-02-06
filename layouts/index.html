@@ -12,6 +12,91 @@
 </header>
 {{- end }}
 
+{{- if eq .Lang "en" }}
+<div class="home-content-wrapper">
+    <div class="posts-section" style="width: 100%;">
+        {{- $pages := where site.RegularPages "Type" "in" site.Params.mainSections }}
+        {{- $paginator := .Paginate $pages }}
+        {{- range $paginator.Pages }}
+        <article class="post-entry">
+            <header class="entry-header">
+                <h2>
+                    <a href="{{ .Permalink }}">{{ .Title }}</a>
+                </h2>
+            </header>
+            {{- if .Description }}
+            <div class="post-description">
+                {{ .Description }}
+            </div>
+            {{- end }}
+            <footer class="entry-footer">
+                {{- partial "post_meta.html" . -}}
+            </footer>
+            <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
+        </article>
+        {{- end }}
+    </div>
+
+    <aside class="contact-sidebar">
+        {{- with site.Params.profileMode.buttons }}
+        <div class="sidebar-buttons" style="margin-bottom: 20px;">
+            {{- range . }}
+            <a class="button" href="{{ trim .url " " }}" rel="noopener" title="{{ .name }}"
+                style="display: block; width: 100%; text-align: center; padding: 10px; border-radius: 8px;">
+                <span class="button-inner">
+                    {{ .name }}
+                    {{- if (findRE "://" .url) }}&nbsp;
+                    <svg fill="none" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="14" width="14">
+                        <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
+                        <path d="M15 3h6v6"></path>
+                        <path d="M10 14L21 3"></path>
+                    </svg>
+                    {{- end }}
+                </span>
+            </a>
+            {{- end }}
+        </div>
+        {{- end }}
+        <h2>Contact</h2>
+        <div class="contact-content">
+            <div class="contact-links">
+                <!-- Email Obfuscation -->
+                <a href="#" class="contact-item" id="mail-link-en">
+                    <span class="contact-icon">✉️</span>
+                    <span id="mail-text-en">Loading...</span>
+                </a>
+                <script>
+                    (function () {
+                        var _u = "ozsoy.kaan";
+                        var _d = "metu.edu.tr";
+                        var _l = document.getElementById('mail-link-en');
+                        var _t = document.getElementById('mail-text-en');
+                        if (_l && _t) {
+                            _l.href = "mailto:" + _u + "@" + _d;
+                            _t.innerText = _u + "@" + _d;
+                        }
+                    })();
+                </script>
+                <a href="https://www.instagram.com/kaan.ozsy/" target="_blank" rel="noopener noreferrer"
+                    class="contact-item">
+                    <span class="contact-icon">📸</span> Instagram
+                </a>
+                <a href="https://www.linkedin.com/in/selim-kaan-%C3%B6zsoy-a18b45360?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+                    target="_blank" rel="noopener noreferrer" class="contact-item">
+                    <span class="contact-icon">💼</span> LinkedIn
+                </a>
+                <a href="https://github.com/veyselmertkara/math-blog" target="_blank" rel="noopener noreferrer"
+                    class="contact-item">
+                    <span class="contact-icon">🐙</span> GitHub
+                </a>
+            </div>
+        </div>
+    </aside>
+</div>
+
+{{- else }}
+
 <div class="home-content-wrapper">
     <div class="categories-section">
         <ul class="terms-tags">
@@ -105,4 +190,5 @@
         </div>
     </aside>
 </div>
+{{- end }}
 {{- end }}

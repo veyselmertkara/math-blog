@@ -1,14 +1,19 @@
 ---
 title: "The Irrationality of √2"
+displayTitle: "The Irrationality of $\\sqrt{2}$"
 date: 2026-02-06
-author: "Selim Kaan Özsoy"
+author: "Selim Kaan Özsoy, Middle East Technical University"
 description: "An essay on the historical and mathematical context of the irrationality of the square root of 2."
+lang: en
 math: true
 ---
 
-**Selim Kaan Özsoy** *Middle East Technical University*
+<style>
+  .post-title { display: none; }       /* Temanın başlığını gizler */
+  .post-description { display: none; } /* Temanın açıklamasını gizler (YENİ) */
+</style>
 
----
+# The Irrationality of $\sqrt{2}$
 
 Most texts concerning the discovery of irrational numbers, and thus of $\sqrt{2}$, begin by stating that the Ancient Greeks attempted to explain the world through numbers. However, this is an incomplete explanation. Just as today, Ancient Greece—being a region with a relatively large population—hosted a variety of schools of thought formed by people who embraced different philosophical perspectives.
 
@@ -45,7 +50,7 @@ Since $a^2$ is divisible by $2$, and $2$ is a prime number, it follows that $2$ 
 
 $$2b^2 = (2k)^2 \implies 2b^2 = 4k^2 \implies b^2 = 2k^2$$
 
-By the same reasoning, $2$ divides $b$. This contradicts the assumption that $a$ and $b$ are relatively prime (since both are divisible by 2). Therefore, $\sqrt{2}$ is irrational. $\qed$
+By the same reasoning, $2$ divides $b$. This contradicts the assumption that $a$ and $b$ are relatively prime (since both are divisible by 2). Therefore, $\sqrt{2}$ is irrational. 
 
 ---
 

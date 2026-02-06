@@ -5,8 +5,8 @@ draft: false
 ---
 
 <div class="language-filter" style="margin-bottom: 2rem; display: flex; justify-content: center; gap: 1rem;">
-    <a href="/en/mini-essays/" class="lang-btn" style="text-decoration: none;">English</a>
-    <a href="/mini-essays/" class="lang-btn active" style="text-decoration: none;">Turkish</a>
+    <a href="?filter=en" class="lang-btn active" id="btn-en">English</a>
+    <a href="?filter=tr" class="lang-btn" id="btn-tr">Turkish</a>
 </div>
 
 <style>
