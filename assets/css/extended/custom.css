@@ -788,29 +788,52 @@ body {
 
 @media (max-width: 768px) {
     .paginav {
-        flex-direction: column;
-        gap: 15px;
+        flex-direction: row;
+        /* Force single line */
+        gap: 6px;
         margin-top: 30px;
-        margin-bottom: 80px;
-        /* Safe distance on mobile */
+        margin-bottom: 60px;
+        justify-content: space-between;
+        padding-top: 10px;
         border-top: none;
-        padding-top: 0;
     }
 
     .nav-label {
-        order: -1;
-        /* Label on top */
-        margin-bottom: 10px;
+        order: 0;
+        margin: 0;
+        font-size: 0.75rem;
+        padding: 0 12px;
+        height: 32px;
+        max-width: 140px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
     }
 
     .paginav a {
-        width: 100%;
+        width: 40px;
+        /* Square-ish for icon */
+        height: 40px;
+        padding: 0;
         justify-content: center;
-        height: 48px;
-        /* Taller touch target */
+        border-radius: 50%;
+        /* Circle buttons on mobile look clean */
+    }
+
+    /* Hide text labels on mobile, keep icons */
+    .paginav a span {
+        display: none;
+    }
+
+    .paginav a svg {
+        margin: 0;
+        width: 20px;
+        height: 20px;
     }
 
     .nav-placeholder {
-        display: none;
+        display: block;
+        /* Restore placeholders to keep centering if one button missing */
+        width: 40px;
     }
 }
