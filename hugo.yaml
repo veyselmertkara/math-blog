@@ -45,7 +45,7 @@ params:
   # --- YAZI DETAYLARI ---
   ShowReadingTime: false    # Okuma süresi kalsın mı? (İstersen bunu da false yapabilirsin)
   ShowShareButtons: false  # <-- DEĞİŞTİ: Paylaş butonları KAPANDI
-  ShowPostNavLinks: false  # <-- DEĞİŞTİ: "Next/Previous" (İleri/Geri) linkleri KAPANDI
+  ShowPostNavLinks: true
   ShowBreadCrumbs: false    # Üstteki "Home > Posts > ..." yolu (Bunu tutmak iyidir)
   ShowCodeCopyButtons: true
   

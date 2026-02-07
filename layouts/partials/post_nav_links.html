@@ -1,0 +1,40 @@
+{{- $pages := slice }}
+{{- $cat := "" }}
+{{- if .Params.categories }}
+{{- $cat = index .Params.categories 0 }}
+{{- $pages = where site.RegularPages "Params.categories" "intersect" (slice $cat) }}
+{{- else }}
+{{- $pages = where site.RegularPages "Type" "in" site.Params.mainSections }}
+{{- end }}
+
+{{- if and (gt (len $pages) 1) (in $pages . ) }}
+<nav class="paginav">
+    {{- with $pages.Prev . }}
+    <a class="nav-prev" href="{{ .Permalink }}">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M15 18l-6-6 6-6" />
+        </svg>
+        <span>Prev. Section</span>
+    </a>
+    {{- else }}
+    <div class="nav-placeholder"></div>
+    {{- end }}
+
+    {{- if $cat }}
+    <span class="nav-label">{{ $cat }}</span>
+    {{- end }}
+
+    {{- with $pages.Next . }}
+    <a class="nav-next" href="{{ .Permalink }}">
+        <span>Next Section</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M9 18l6-6-6-6" />
+        </svg>
+    </a>
+    {{- else }}
+    <div class="nav-placeholder"></div>
+    {{- end }}
+</nav>
+{{- end }}
