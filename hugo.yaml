@@ -3,7 +3,7 @@ baseURL: "https://crichmath.org/"
 defaultContentLanguage: tr
 theme: "PaperMod"
 enableEmoji: true
-
+keywords: ["matematik notları", "calculus lecture notes", "ODTÜ matematik","METU mathematics", "Selim Kaan Özsoy", "crichmath"]
 languages:
   tr:
     languageName: "Türkçe"
